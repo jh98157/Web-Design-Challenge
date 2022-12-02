@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Home</title>
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <!-- Start of navbar -->
+    <div class="topnav">
+      <a class="active" href="index.html">Home</a>
+
+      <div class="dropdown show">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plots 	&darr;
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="visualizations/temp.html">Max Temperature</a>
+          <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
+          <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
+          <a class="dropdown-item" href="visualizations/wind.html">Wind Speed</a>
+        </div>
+      </div>
+      
+      <a href="comparison.html">Comparisons</a>
+      <a href="data.html">Data</a>
+    </div> 
+    <!-- End of navbar -->
+    <!-- Start of container -->
+    <div class="container">
+      <br>
+      <div class="row">
+
+        <div class="col col-12 col-md-8 divbdy">
+          <br>
+          <h1>Summary: Latitude vs. X</h1>
+          <hr>
+          <img src="assets/images/Fig1.png" alt="Latitude vs. Temperature" width="280" align="left">
+          <p style="font-size:20px;">The purpose of this project was to analyze how weather changes as you get closer to the equator. To
+            accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500
+            cities.</p>
+          <p style="font-size:20px;">After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors
+            we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the souce data
+            and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and
+            correlations witnesseed.</p>
+          <hr>
+        </div>
+          <!-- Start of Visualizations imageNav Area -->
+        <div class="col col-12 col-md-4 divbdy">
+          <br>
+          <h2>Visualizations</h2>
+          <hr>
+          <div class="row">
+            <div class="col col-3 col-md-6">
+              <a href="visualizations/temp.html"><img src="assets/images/Fig1.png" alt="Latitude vs. Temperature"></a>
+            </div>
+            <div class="col col-3 col-md-6">
+              <a href="visualizations/humidity.html"><img src="assets/images/Fig2.png" alt="Latitude vs. Humidity"></a>
+            </div>
+            <div class="col col-3 col-md-6">
+              <a href="visualizations/cloudiness.html"><img src="assets/images/Fig3.png" alt="Latitude vs. Cloudiness"></a>
+            </div>
+            <div class="col col-3 col-md-6">
+              <a href="visualizations/wind.html"><img src="assets/images/Fig4.png" alt="Latitude vs. Wind Speed"></a>
+            </div>
+          </div>
+            <!-- End of the Visualizations imageNav Area -->
+        </div>
+      </div>
+    </div>  
+    <!-- End of container -->
+  </body>
+
+</html>
